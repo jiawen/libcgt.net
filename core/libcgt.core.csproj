@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DE2D6DDC-FFEB-41F0-B07C-F17B4E6D32C5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <NoStandardLibraries>false</NoStandardLibraries>
+    <AssemblyName>libcgt.core</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>libcgt.core</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\ClassLibrary.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>..\bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\ClassLibrary.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Windows.Presentation" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AbstractCache.cs" />
+    <Compile Include="AbstractData.cs" />
+    <Compile Include="AffineFrame.cs" />
+    <Compile Include="Arithmetic.cs" />
+    <Compile Include="Array2D.cs" />
+    <Compile Include="Array4D.cs" />
+    <Compile Include="BitArrayExtensions.cs" />
+    <Compile Include="BitTwiddling.cs" />
+    <Compile Include="CatmullRomSpline2f.cs" />
+    <Compile Include="Color4f.cs" />
+    <Compile Include="Color4ub.cs" />
+    <Compile Include="Ellipse3f.cs" />
+    <Compile Include="EmptyEventHandler.cs" />
+    <Compile Include="EventArgsT.cs" />
+    <Compile Include="Geometry\BoundingBox.cs" />
+    <Compile Include="Geometry\Box3f.cs" />
+    <Compile Include="Geometry\Box4f.cs" />
+    <Compile Include="Geometry\Box4i.cs" />
+    <Compile Include="Geometry\Clipper.cs" />
+    <Compile Include="Geometry\Cone3f.cs" />
+    <Compile Include="Geometry\ConservativeRasterizer.cs" />
+    <Compile Include="Geometry\Cylinder3f.cs" />
+    <Compile Include="Geometry\GeometryUtils.cs" />
+    <Compile Include="Geometry\KleinBottle.cs" />
+    <Compile Include="Geometry\LineDrawing2D.cs" />
+    <Compile Include="Geometry\LineIntersection.cs" />
+    <Compile Include="Geometry\LineUtilities2f.cs" />
+    <Compile Include="Geometry\MeanValueCoordinates2D.cs" />
+    <Compile Include="Geometry\Plane3f.cs" />
+    <Compile Include="Geometry\Plane4f.cs" />
+    <Compile Include="Geometry\PolyLineOffset.cs" />
+    <Compile Include="Geometry\Predicates.cs" />
+    <Compile Include="Geometry\Quadrilateral3f.cs" />
+    <Compile Include="Geometry\RayIntersectionRecord.cs" />
+    <Compile Include="Geometry\RayTriangleIntersectionRecord.cs" />
+    <Compile Include="Geometry\StandardRasterizer.cs" />
+    <Compile Include="Geometry\TriangleIntersection.cs" />
+    <Compile Include="Geometry\TriangleTriangleIntersection.cs" />
+    <Compile Include="Geometry\TriangleUtilities.cs" />
+    <Compile Include="HilbertCurve.cs" />
+    <Compile Include="IControlPoint2f.cs" />
+    <Compile Include="ImageProcessing\Blur.cs" />
+    <Compile Include="ImageProcessing\ColorSpaceConversion.cs" />
+    <Compile Include="ImageProcessing\Compositing.cs" />
+    <Compile Include="ImageProcessing\Contours.cs" />
+    <Compile Include="ImageProcessing\FormatConversion.cs" />
+    <Compile Include="ImageProcessing\Gradient.cs" />
+    <Compile Include="ImageProcessing\IImage.cs" />
+    <Compile Include="ImageProcessing\Image1f.cs" />
+    <Compile Include="ImageProcessing\Image1ub.cs" />
+    <Compile Include="ImageProcessing\Image4f.cs" />
+    <Compile Include="ImageProcessing\Image4ub.cs" />
+    <Compile Include="ImageProcessing\Images.cs" />
+    <Compile Include="ImageProcessing\LinearOperators.cs" />
+    <Compile Include="ImageProcessing\Patterns.cs" />
+    <Compile Include="ImageProcessing\Resizing\BicubicCatmullRom.cs" />
+    <Compile Include="ImageProcessing\Resizing\BicubicMitchellNetravalli.cs" />
+    <Compile Include="ImageProcessing\Resizing\Bilinear.cs" />
+    <Compile Include="ImageProcessing\Resizing\NearestNeighbor.cs" />
+    <Compile Include="ImageProcessing\ToneMapping\ShiftAndScale.cs" />
+    <Compile Include="ImageSequenceCache.cs" />
+    <Compile Include="ImageSequenceVideo.cs" />
+    <Compile Include="IntInterval.cs" />
+    <Compile Include="IO\FilenameBuilder.cs" />
+    <Compile Include="IO\IOUtils.cs" />
+    <Compile Include="ISpline.cs" />
+    <Compile Include="IVideo.cs" />
+    <Compile Include="ListExtensions.cs" />
+    <Compile Include="LRUCache.cs" />
+    <Compile Include="ManipulatedCameraFrame.cs" />
+    <Compile Include="ManipulatedFrame.cs" />
+    <Compile Include="MathUtils.cs" />
+    <Compile Include="OBJData.cs" />
+    <Compile Include="OBJFace.cs" />
+    <Compile Include="OBJGroup.cs" />
+    <Compile Include="OldCamera.cs" />
+    <Compile Include="OpenNaturalCubicSpline.cs" />
+    <Compile Include="Pair.cs" />
+    <Compile Include="Parallel\ParallelUtils.cs" />
+    <Compile Include="PiecewiseCatmullRomSpline.cs" />
+    <Compile Include="PLYData.cs" />
+    <Compile Include="PLYElementDescription.cs" />
+    <Compile Include="PLYHeader.cs" />
+    <Compile Include="PLYReader.cs" />
+    <Compile Include="PLYWriter.cs" />
+    <Compile Include="PrefetchingLRUCache.cs" />
+    <Compile Include="ProgressReporter.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ProxyVideo.cs" />
+    <Compile Include="RandomAccessVideoView.cs" />
+    <Compile Include="RandomExtensions.cs" />
+    <Compile Include="RayEllipseIntersectionRecord.cs" />
+    <Compile Include="Rectangle3f.cs" />
+    <Compile Include="Sampling\IPattern4D.cs" />
+    <Compile Include="Sampling\IPatternND.cs" />
+    <Compile Include="Sampling\Jittered4D.cs" />
+    <Compile Include="Sampling\LatinHypercube4D.cs" />
+    <Compile Include="Sampling\Regular4D.cs" />
+    <Compile Include="Sampling\RegularND.cs" />
+    <Compile Include="Sampling\RegularTiled2DStratified4D.cs" />
+    <Compile Include="Sampling\SamplingUtils.cs" />
+    <Compile Include="Sampling\Stratified2Dx2D.cs" />
+    <Compile Include="Sampling\Stratified4D.cs" />
+    <Compile Include="Sampling\StratifiedND.cs" />
+    <Compile Include="Sampling\Tiled2DStratifiedND.cs" />
+    <Compile Include="SimpleAlgorithms.cs" />
+    <Compile Include="SparseImageFloat.cs" />
+    <Compile Include="SpatialDataStructures\QuadTree.cs" />
+    <Compile Include="Spline2f.cs" />
+    <Compile Include="Spline2fEvaluationCache.cs" />
+    <Compile Include="Spline2fPiecewiseCache.cs" />
+    <Compile Include="SpotLight.cs" />
+    <Compile Include="TimeUtils.cs" />
+    <Compile Include="Trackball\Camera.cs" />
+    <Compile Include="Trackball\Frame.cs" />
+    <Compile Include="Trackball\ManipulatedCameraFrame.cs" />
+    <Compile Include="Trackball\ManipulatedFrame.cs" />
+    <Compile Include="Trackball\MouseAction.cs" />
+    <Compile Include="Trackball\StandardCamera.cs" />
+    <Compile Include="Triangulator.cs" />
+    <Compile Include="UniversalManipulatorWidget.cs" />
+    <Compile Include="Util\Objects.cs" />
+    <Compile Include="Vecmath\Matrix2f.cs" />
+    <Compile Include="Vecmath\Matrix3f.cs" />
+    <Compile Include="Vecmath\Matrix4f.cs" />
+    <Compile Include="Vecmath\MatrixUtil.cs" />
+    <Compile Include="Vecmath\Quat4f.cs" />
+    <Compile Include="Vecmath\Rect2f.cs" />
+    <Compile Include="Vecmath\Rect2i.cs" />
+    <Compile Include="Vecmath\Vector2f.cs" />
+    <Compile Include="Vecmath\Vector2i.cs" />
+    <Compile Include="Vecmath\Vector3f.cs" />
+    <Compile Include="Vecmath\Vector3i.cs" />
+    <Compile Include="Vecmath\Vector4f.cs" />
+    <Compile Include="Vecmath\Vector4i.cs" />
+    <Compile Include="Vecmath\Vector4ub.cs" />
+    <Compile Include="ZCurve.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSHARP.Targets" />
+  <ProjectExtensions>
+    <VisualStudio AllowExistingFolder="true" />
+  </ProjectExtensions>
+</Project>

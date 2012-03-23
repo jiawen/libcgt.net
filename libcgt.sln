@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "libcgt.core", "core\libcgt.core.csproj", "{DE2D6DDC-FFEB-41F0-B07C-F17B4E6D32C5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DE2D6DDC-FFEB-41F0-B07C-F17B4E6D32C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE2D6DDC-FFEB-41F0-B07C-F17B4E6D32C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE2D6DDC-FFEB-41F0-B07C-F17B4E6D32C5}.Debug|x64.ActiveCfg = Debug|x64
+		{DE2D6DDC-FFEB-41F0-B07C-F17B4E6D32C5}.Debug|x64.Build.0 = Debug|x64
+		{DE2D6DDC-FFEB-41F0-B07C-F17B4E6D32C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE2D6DDC-FFEB-41F0-B07C-F17B4E6D32C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE2D6DDC-FFEB-41F0-B07C-F17B4E6D32C5}.Release|x64.ActiveCfg = Release|x64
+		{DE2D6DDC-FFEB-41F0-B07C-F17B4E6D32C5}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
