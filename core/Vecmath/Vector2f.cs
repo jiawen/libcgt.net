@@ -94,6 +94,24 @@ namespace libcgt.core.Vecmath
             
         }
 
+        public unsafe float this[ int k ]
+        {
+            get
+            {
+                fixed( float* arr = &x )
+                {
+                    return arr[ k ];
+                }
+            }
+            set
+            {
+                fixed( float* arr = &x )
+                {
+                    arr[ k ] = value;
+                }
+            }
+        }
+
         /// <summary>
         /// Component-wise absolute value
         /// </summary>

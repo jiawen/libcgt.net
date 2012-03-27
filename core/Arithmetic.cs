@@ -563,5 +563,15 @@ namespace libcgt.core
         {
             return totalSize / binSize;
         }
+
+        public static float Square( float x )
+        {
+            return x * x;
+        }
+
+        public static double Square( double x )
+        {
+            return x * x;
+        }
     }
 }
